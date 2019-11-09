@@ -13,11 +13,3 @@ exports.show=(req,res)=>{
     })
 }
 
-
-
-
-
-
-
-
-
