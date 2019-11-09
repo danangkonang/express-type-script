@@ -4,8 +4,6 @@ const bodyParser = require('body-parser')
 const app = express()
 app.use(bodyParser.json())
 
-
-
 const controlerProduct = require('./controlers/products')
 app.get('/', (req, res) => res.send('Hello danang!'))
 app.get('/products',controlerProduct.index)
