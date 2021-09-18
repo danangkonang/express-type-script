@@ -1,5 +1,5 @@
 import { Response } from "express";
-const models = require('../models');
+const models = require('../db/models');
 
 const show = async (): Promise<Response> =>  {
   const user = await models.user.findAll();
