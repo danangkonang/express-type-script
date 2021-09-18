@@ -1,16 +1,22 @@
 {
   "name": "service-express-typescript",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danangkonang/service-express-typescript.git"
+  },
   "version": "1.0.0",
-  "description": "kasir",
-  "main": "index.js",
+  "description": "service user auth express typescripts",
+  "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test nyc --reporter=html --reporter=text mocha --timeout 20000 --recursive src/tests",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "author": "danangkonang",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "typescript": "^4.4.3"
+  }
 }
