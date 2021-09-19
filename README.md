@@ -2,12 +2,22 @@
 
 ## installation
 ```bash
+git clone git://github.com/danangkonang/service-express-typescript.git
+
+cd service-express-typescript
+
+cp .env.example .env
+
+npm install
+
+# (optional) if use container mysql
+docker-compose up --build -d
 
 # running migration
-$ npx sequelize-cli db:migrate
+npx sequelize-cli db:migrate
 
 # runing seeder
-$ npx sequelize-cli db:seed:all
+npx sequelize-cli db:seed:all
 
 ```
 

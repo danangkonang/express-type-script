@@ -1,7 +1,7 @@
 import express, { Application } from 'express';
 import router from './router/index';
 const app: Application = express();
-const port = 3000;
+const port = 9000;
 
 app.use(router)
 
